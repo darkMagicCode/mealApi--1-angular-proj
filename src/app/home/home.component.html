@@ -1,0 +1,32 @@
+<div class=" d-none position-fixed  w-100 h-100 align-items-center align-content-center bg-black top-0 bottom-0 end-0 start-0">
+  <img [src]="mealArray[0].strMealThumb" class=" w-100" alt="">
+</div>
+  <div class="container">
+    <div class="row g-4 " >
+      <div  class="col-md-3    " *ngFor=" let meal of mealArray">
+
+  <div class=" border shadow-sm " (click)="test(meal.strMealThumb)">
+    <img [src]="meal.strMealThumb" class="w-100" alt="">
+    <div class=" d-flex justify-content-between align-items-center ">
+      <h2 class=" p-2 " >{{meal.strMeal.split(" ").splice(0,4).join(" ")}}</h2>
+    <div class=" pe-3">
+        <h5 class=" p-2 text-end d-inline">{{meal.strArea}}</h5>
+        <i class="  fas fa-location-arrow  text-end "></i>
+    </div>
+    </div>
+    <p class=" p-2">{{meal.strInstructions.split(" ").splice(0,10).join(" ")}}</p>
+  <a [href]="meal.strYoutube" class="btn btn-danger m-3">YouTube</a>
+  <a [href]="meal.strSource" class="btn btn-info m-3">Full article</a>
+  <!-- <p class="btn btn-info m-3"  >{{meal.strTags?meal.strTags.split(",").splice(0,4).join(" "):"meal"}}</p> -->
+  </div>
+
+
+  <!-- <app-meal-info [mealId]="meal.idMeal"></app-meal-info> -->
+
+      </div>
+    </div>
+  </div>
+
+  <!-- {{meal.strTags?meal.strTags.split(",").splice(0,4).join(" "):"meal"}} -->
+
+

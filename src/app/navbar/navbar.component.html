@@ -1,0 +1,41 @@
+<div [class.hideAndShow]="navtoggle"
+class=" d-flex flex-column justify-content-between bg-danger w-md-25 position-fixed h-100 top-0 bottom-0" style="transition: all 0.6s linear; z-index: 9999">
+<ul class="mt-3 list-unstyled">
+  <li class="h2 p-3 search">
+    <a
+      class="text-light text-capitalize fw-lighter" routerLink="home">home</a>
+  </li>
+  <li class="text-light h2 p-3">
+    <a
+      class="text-light text-capitalize fw-lighter" routerLink="category">category</a>
+  </li>
+  <li class="text-light h2 p-3">
+    <a class="text-light text-capitalize fw-lighter" routerLink="area">area</a>
+  </li>
+  <li class="text-light h2 p-3">
+    <a class="text-light text-capitalize fw-lighter" routerLink="Intgreation">Ingredients</a>
+  </li>
+  <li class="text-light h2 p-3">
+    <a class="text-light text-capitalize fw-lighter">contact us</a>
+  </li>
+</ul>
+<div class="py-5 text-start px-2">
+  <i class="fab fa-facebook text-light p-3"></i>
+  <i class="fab fa-twitter text-light p-3"></i>
+  <i class="fab fa-instagram text-light p-3"></i>
+  <h5 class="text-light lead w-75">
+    Copyright Â© 2019 All Rights Reserved.
+  </h5>
+</div>
+<div
+  class="py-4 bg-light position-absolute end-0 top-0 bottom-0 w-25 d-flex flex-column justify-content-between align-items-center">
+  <i class="fas fa-brands fa-angular text-danger fa-3x"></i>
+  <i (click)="navChange()" [ngClass]="navtoggle?navClose:navOpen" class="fa-3x text-danger" style="cursor: pointer"></i>
+  <div
+    class="d-flex flex-column justify-content-between  align-items-center"
+  >
+    <i class="fas fa-globe my-2 fa-2x text-danger"></i>
+    <i class="fas fa-share-alt my-2 fa-2x text-danger"></i>
+  </div>
+</div>
+</div>

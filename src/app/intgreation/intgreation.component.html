@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row g-3">
+    <div class="col-md-4 text-center" *ngFor="let x of cateArray.slice(0,21)">
+     <div class=" border shadow-sm bg-light">
+       <i class="text-success fas fa-burger fa-5x p-2"></i>
+       <h2 class=" text-danger py-2">{{x.strIngredient}}</h2>
+       <h4 class="px-3 p-2 text-dark">{{x.strDescription.split(" ").slice(0,15).join(" ")}}</h4>
+     </div>
+
+    </div>
+  </div>
+</div>
+

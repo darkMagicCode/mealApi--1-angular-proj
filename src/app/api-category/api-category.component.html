@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row g-3">
+    <div class="col-md-3 " *ngFor="let cate of cateArray">
+ <div class="border shadow ">
+       <img [src]="cate.strCategoryThumb" class=" w-100" alt="">
+       <h2 class="  p-3 ">{{cate.strCategory}}</h2>
+       <p class=" lead p-3 ">{{cate.strCategoryDescription.split(" ").slice(0,11).join(" ")}}</p>
+ </div>
+    </div>
+  </div>
+</div>
+a
+
+
+
+
+
+
+
+
+
+
+
+
+
+a

@@ -1,0 +1,12 @@
+a{
+  text-decoration: none;
+}
+
+.hideAndShow {
+  transform:translateX(-78%) ;
+  -webkit-transform:translateX(-78%) ;
+  -moz-transform:translateX(-78%) ;
+  -ms-transform:translateX(-78%) ;
+  -o-transform:translateX(-78%) ;
+
+}
